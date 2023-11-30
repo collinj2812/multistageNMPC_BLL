@@ -5,3 +5,5 @@ For questions about these materials we kindly ask you to send an e-mail at colli
 Training of data-based models is performed using the method shown in "F. Fiedler and S. Lucia (2023). Improved Uncertainty Quantification for Neural Networks With Bayesian Last Layer. IEEE Access, 11, 123149–123160", https://github.com/4flixt/2023_Paper_BLL_LML/ based on Tensorflow/Keras.
 
 The robust multi-stage NMPC algorithm uses the package do-mpc based on CasADi and IPOPT.
+
+This repository is currently still in construction.
