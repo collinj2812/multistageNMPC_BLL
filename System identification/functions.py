@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import casadi as ca
 
+import sys
+import os
+sys.path.append(os.path.join(sys.path[0],'BLL'))
 import tools
 
 def calculate_outputs(data):
@@ -54,3 +57,7 @@ def narx_io(y, u, l):
     narx_out = y[l:]
     narx_in = np.concatenate(narx_in, axis=1)
     return narx_in, narx_out
+
+def MPC_input(x_next):
+    x = ca.vertcat(ca.DM(x_next[:3]),ca.DM(x_next[4]/x_next[3]),ca.DM(x_next[-3:])/ca.DM(x_next[-3]))
+    return x
