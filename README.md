@@ -6,7 +6,7 @@ Training of data-based models is performed using the method shown in "F. Fiedler
 
 The robust multi-stage NMPC algorithm uses the package do-mpc based on CasADi and IPOPT.
 
-This repository is currently still in construction.
+This repository is currently still under construction.
 
 Steps:
 1. Generate simulation data in "Data generation"
